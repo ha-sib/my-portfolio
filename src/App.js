@@ -152,13 +152,13 @@ const Header = ({ darkMode, setDarkMode }) => {
           </a>
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="ml-4 p-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             aria-label={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
           >
             {darkMode ? (
-              <i className="fas fa-sun text-yellow-400"></i>
+              <i className="fas fa-sun fa-sm text-yellow-400"></i>
             ) : (
-              <i className="fas fa-moon text-gray-700"></i>
+              <i className="fas fa-moon fa-sm text-gray-700"></i>
             )}
           </button>
         </nav>
@@ -280,12 +280,12 @@ const About = () => (
 const Experience = () => {
   const experiences = [
     {
-      title: 'IT Officer',
+      title: 'Assistant Manager',
       company: {
       name: 'UCB Investment Limited.',
       link: 'https://ucb-investment.com/'
        },
-      duration: 'OCT 20224 - Present',
+      duration: 'OCT 2024 - Present',
       description: 'Managed and maintained the company’s IT infrastructure to ensure seamless daily operations. Implemented new IT solutions to improve system efficiency and security. Provided technical support to enhance productivity',
       responsibilities: [
         'Troubleshot and resolved hardware, software, and network issues promptly to minimize downtime.',
@@ -713,3 +713,4 @@ const Footer = ({ darkMode }) => {
   );
 };
 export default App;
+
